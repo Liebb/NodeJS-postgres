@@ -10,5 +10,5 @@ const URI = `postgres://${USER}:${PASSWORD}@${config.dbHost}:${config.dbPort}/${
 const sequelize = new Sequelize(URI, { dialect:'postgres', logging: true });
 setupModels(sequelize);
 //Toma el modelo y crea la estructura
-sequelize.sync();
+// sequelize.sync();
 module.exports = sequelize;
